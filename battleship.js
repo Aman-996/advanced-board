@@ -175,7 +175,7 @@ function init() {
     let fireButton = document.getElementById("fireButton");
     fireButton.onclick = handleFireButton;
     let guessInput = document.getElementById("guessInput");
-    guessInput.onkeypress = handleKeyPress;
+    guessInput.onkeydown = handleKeyPress;
     // 用于处理HTML输入字段的按键事件
 
     model.generateShipLocations();
